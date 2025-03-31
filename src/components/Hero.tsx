@@ -41,7 +41,14 @@ const Hero = () => {
           height: "100%",
           duration: 1,
           ease: "power1.inOut",
-          onStart: () => nextVideoRef.current!.play(),
+          onStart: () => {
+            const video = nextVideoRef.current;
+            if (video) {
+              video.play().catch((error) => {
+                console.error("Error playing video:", error);
+              });
+            }
+          },
         });
 
         gsap.from("#current-video", {

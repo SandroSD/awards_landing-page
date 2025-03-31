@@ -52,7 +52,7 @@ const Story = () => {
         <div className="relative size-full">
           <AnimatedTitle
             title="The st<b>o</b>ry of <br /> a hidden real<b>m</b>"
-            sectionId="#story"
+            //sectionId="#story"
             containerClass="mt-5 pointer-events-none mix-blend-difference relative z-10"
           />
 

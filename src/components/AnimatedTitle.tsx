@@ -3,11 +3,11 @@ import { useRef, useEffect } from "react";
 
 const AnimatedTitle = ({
   title,
-  sectionId,
+  //sectionId,
   containerClass,
 }: {
   title: string;
-  sectionId?: string;
+  //sectionId?: string;
   containerClass: string;
 }) => {
   const containerRef = useRef(null);
